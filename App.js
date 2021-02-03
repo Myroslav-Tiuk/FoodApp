@@ -1,12 +1,15 @@
 import React from 'react';
 import {Text, View, StyleSheet} from 'react-native'
 
+import MealsNavigator from './navigation/MealsNavigator'
+import { enableScreens } from 'react-native-screens';
+
+
+enableScreens();
 
 const App = () => {
   return(
-    <View style={styles.container}>
-      <Text>FoodApp React Native</Text>
-    </View>
+   <MealsNavigator />
   )
 }
 

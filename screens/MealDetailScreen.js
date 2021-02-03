@@ -1,11 +1,15 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native'
+import {Text, View, StyleSheet, Button} from 'react-native'
 
 
-const MealDetailScreen = () => {
+const MealDetailScreen = ({navigation}) => {
   return(
     <View style={styles.container}>
       <Text>MealDetailScreen</Text>
+      <Button
+        title="Go Back to Category"
+        onPress={() => navigation.pop()}
+      />
     </View>
   )
 }
