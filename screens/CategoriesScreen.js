@@ -14,7 +14,7 @@ const CategoriesScreen = ({ navigation}) => {
             onSelect={() => {
                 navigation.navigate('CategoryMeal',
                     {
-                        categotyId: itemData.item.id,
+                        categoryId: itemData.item.id,
                         title: itemData.item.title
                     })
             }}
