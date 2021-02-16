@@ -1,7 +1,7 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native'
+import {Text, View, StyleSheet} from 'react-native';
 
-import MealsNavigator from './navigation/MealsNavigator'
+import MealsTabNavigator from './navigation/MealsTabNavigator';
 import { enableScreens } from 'react-native-screens';
 
 
@@ -9,7 +9,7 @@ enableScreens();
 
 const App = () => {
   return(
-   <MealsNavigator />
+   <MealsTabNavigator />
   )
 }
 
