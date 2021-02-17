@@ -25,7 +25,7 @@ const MealsTabNavigator = ({ navigation }) => {
                 }}
             >
                 <Tab.Screen
-                    name='Meals'
+                    name='All meals'
                     component={MealsNavigator}
                     options={{
                         tabBarIcon: ({ color }) => (
@@ -33,7 +33,7 @@ const MealsTabNavigator = ({ navigation }) => {
                         ),
                     }} />
                 <Tab.Screen
-                    name='Favorite'
+                    name='Favorite Meal'
                     component={FavoriteNavigator}
                     options={{
                         tabBarIcon: ({ color }) => (
