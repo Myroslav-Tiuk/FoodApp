@@ -1,9 +1,10 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {Text, View, StyleSheet, Image} from 'react-native';
 
 const FavoriteScreen = () => {
   return (
     <View style={styles.container}>
+      <Image style={{width: 300, height: 300}} source={require('../models/images/meals.png')} />
       <Text>FavoriteScreen</Text>
     </View>
   );
