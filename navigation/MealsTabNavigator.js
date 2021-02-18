@@ -1,8 +1,7 @@
 /* eslint-disable prettier/prettier */
 import * as React from 'react';
-import { View, Text, Platform, Image } from 'react-native';
 
-import { NavigationContainer } from '@react-navigation/native';
+// import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import MealsNavigator from '../navigation/MealsNavigator';
@@ -18,7 +17,7 @@ const FavoriteStack = createStackNavigator()
 
 const MealsTabNavigator = ({ navigation }) => {
     return (
-        <NavigationContainer>
+        // <NavigationContainer>
             <Tab.Navigator
                 tabBarOptions={{
                     activeTintColor: Colors.accentColor
@@ -42,7 +41,7 @@ const MealsTabNavigator = ({ navigation }) => {
                     }}
                 />
             </Tab.Navigator>
-        </NavigationContainer>
+        // </NavigationContainer>
     )
 }
 
@@ -52,9 +51,11 @@ const FavoriteNavigator = ({ navigation }) => {
     return (
         <FavoriteStack.Navigator screenOptions={{
             headerStyle: {
-                backgroundColor: '#d02860'
+                
+
             },
-            headerTintColor: '#fff'
+            headerTintColor: Colors.primaryColor
+
         }}>
             <FavoriteStack.Screen name="Favorite" component={FavoriteScreen} options={{
                 title: "Favorite"
